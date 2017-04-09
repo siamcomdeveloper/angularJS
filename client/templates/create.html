@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Add New Blog</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addBlog(blog)">
+
+    <div class="form-group">
+      <label for="topic">Topic:</label>
+      <input type="text" class="form-control" id="topic" ng-model="blog.topic">
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content:</label>
+      <input type="text" class="form-control" id="content" ng-model="blog.content">
+    </div>
+
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Save</button>
+    <a href="#/blogs" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"> Close</a>
+</form>
+    <div>
+<div>

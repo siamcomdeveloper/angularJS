@@ -1,0 +1,26 @@
+<div class="panel panel-default" ng-init="showBlog()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Blog's Details Information </p>
+	</div>
+	<div class="panel-body">
+		<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="margin-bottom:10px">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">ID</th>
+      <th class="mdl-data-table__cell--non-numeric">Topic</th>
+      <th class="mdl-data-table__cell--non-numeric">Content</th>
+      <th>Blog User_ID:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">{{blog.id}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{blog.topic}}</td>
+      <td class="mdl-data-table__cell--non-numeric">{{blog.content}}</td>
+      <td>{{blog.user_id}}</td>
+    </tr>
+      </tbody>
+</table>
+ <a href="#/blogs" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"> Close</a>
+    <div>
+<div>

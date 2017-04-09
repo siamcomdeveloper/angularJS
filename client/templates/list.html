@@ -1,0 +1,23 @@
+<table class="table table-bordered" ng-init="getBlogs()">
+	<thead>
+	<tr>
+	  <th>ID</th>
+	  <th>Topic</th>
+	  <th>Content</th>
+
+	  <th>Actions</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="blog in blogs | filter:search">
+	  <td>{{ blog.id }}</td>
+	  <td>{{ blog.topic }}</td>
+	  <td>{{ blog.content }}</td>
+	  <td>
+	    <a href="#/blogs/{{blog.id}}/show" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> Show  </a>
+	    <a href="#/blogs/{{blog.id}}/edit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent1"> Edit  </a>
+	  	<a ng-click="deleteBlog(blog.id)" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Delete </a>
+	  </td>
+	</tr>
+	</tbody>
+</table>
